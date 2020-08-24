@@ -1,1 +1,2 @@
-# Node - KnexJS API
+# KnexJS CRUD
+CRUD criado utilizando Express, Knex.js e postgres
