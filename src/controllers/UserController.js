@@ -41,9 +41,8 @@ module.exports = {
     try {
       const { id } = req.params;
       const { username } = req.body;
-      const updated_at = knex.fn.now();
 
-      await knex("users").update({ username, updated_at }).where({ id });
+      await knex("users").update({ username }).where({ id });
 
       return res.send();
     } catch (error) {
